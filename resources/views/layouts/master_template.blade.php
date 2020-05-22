@@ -5,7 +5,9 @@
 </head>
 <body>
     @include('includes.menu')
-    @yield('content')
+    <div style="padding-top: 60px">
+        @yield('content')
+    </div>
     @include('includes.foot')
 </body>
 </html>

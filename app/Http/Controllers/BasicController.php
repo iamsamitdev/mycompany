@@ -18,21 +18,26 @@ class BasicController extends Controller
 
     // ฟังก์ชัน service
     public function service(){
-        return "Service page";
+        return view('pages.service');
     }
 
     // ฟังก์ชัน portfolio
     public function portfolio(){
-        return "Portfolio page";
+        return view('pages.portfolio');
     }
     
     // ฟังก์ชัน blog
     public function blog(){
-        return "Blog page";
+        return view('pages.blog');
     }
 
     // ฟังก์ชัน contact
     public function contact(){
-        return "Contact page";
+        return view('pages.contact');
+    }
+
+     // ฟังก์ชัน login
+     public function login(){
+        return view('pages.login');
     }
 }

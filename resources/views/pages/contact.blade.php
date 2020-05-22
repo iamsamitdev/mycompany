@@ -1,11 +1,11 @@
 <!-- การเรียกใช้งาน Tempate -->
 @extends('layouts.master_template')
-@section('title') เกี่ยวกับเรา @endsection
+@section('title') ติดต่อเรา @endsection
 @section('content')
 
 <div class="jumbotron">
     <div class="container">
-        <h2 class="display-3 head-title">เกี่ยวกับเรา</h2>
+        <h2 class="display-3 head-title">ติดต่อเรา</h2>
     </div>
 </div>
 

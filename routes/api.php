@@ -14,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('getdata', function(){
+    return "Hello test api";
+});
+
+Route::post('postdata', function(){
+    return "Hello test from api post method";
+});
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

@@ -25,3 +25,13 @@ Route::get('portfolio', 'BasicController@portfolio');
 Route::get('blog', 'BasicController@blog');
 /** Contact */
 Route::get('contact', 'BasicController@contact');
+/** Login */
+Route::get('login', 'BasicController@login');
+
+Route::get('api/getdata', function(){
+    return "Hello test from web";
+});
+
+// Route::post('api/postdata', function(){
+//     return "Hello test from web post method";
+// });

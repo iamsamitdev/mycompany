@@ -1,8 +1,47 @@
+@font-face {
+	font-family: 'Sukhumvit';
+	/*src: url('fonts/sukhumvit-set/SukhumvitSet-Bold.ttf');
+  src: url('fonts/sukhumvit-set/SukhumvitSet-Light.ttf');
+  src: url('../fonts/sukhumvit-set/SukhumvitSet-Medium.ttf') format('truetype');
+  src: url('fonts/sukhumvit-set/SukhumvitSet-SemiBold.ttf');*/
+ src: url('../fonts/sukhumvit-set/SukhumvitSet-Text.ttf');
+   /*src: url('fonts/sukhumvit-set/SukhumvitSet-Thin.ttf');*/
+}
+
+body{
+    font-family: 'Sukhumvit', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+.head-title{
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .navbar-light .navbar-nav .nav-link{
+        text-align: center;
+    }
+}
+
 /*footer*/
 .col_white_amrc { color:#FFF;}
 footer { width:100%; background-color:#263238; min-height:250px; padding:10px 0px 25px 0px ;}
 .pt2 { padding-top:40px ; margin-bottom:20px ;}
-footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+footer p { font-size:16px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .mb10 { padding-bottom:15px ;}
 .footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
 .footer_ul_amrc li {padding:0px 0px 5px 0px;}
@@ -20,7 +59,7 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .foote_bottom_ul_amrc {
 	list-style-type:none;
 	padding:0px;
-	display:table;
+	/* display:table; */
 	margin-top: 10px;
 	margin-right: auto;
 	margin-bottom: 10px;
