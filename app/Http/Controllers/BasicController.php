@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class BasicController extends Controller
 {
@@ -39,5 +40,17 @@ class BasicController extends Controller
      // ฟังก์ชัน login
      public function login(){
         return view('pages.login');
+    }
+
+    // อ่านข้อมูล Employee ทั้งหมด
+    public function employees(){
+        $employees = DB::table('employees')->get();
+        echo "<pre>";
+        print_r($employees);
+        echo "</pre>";
+
+        foreach ($employees as $emp) {
+            echo $emp->fullname."<br>";
+        }
     }
 }

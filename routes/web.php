@@ -35,3 +35,5 @@ Route::get('api/getdata', function(){
 // Route::post('api/postdata', function(){
 //     return "Hello test from web post method";
 // });
+
+Route::get('employees','BasicController@employees');
