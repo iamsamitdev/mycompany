@@ -28,6 +28,5 @@ Route::get('contact', 'BasicController@contact');
 /** Login */
 Route::get('login', 'BasicController@login');
 
-Route::get('api/getdata', function(){
-    return "Hello test from web";
-});
+/** Read Employee */
+Route::get('employees', 'BasicController@employees');
