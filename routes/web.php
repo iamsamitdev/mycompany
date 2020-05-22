@@ -31,7 +31,3 @@ Route::get('login', 'BasicController@login');
 Route::get('api/getdata', function(){
     return "Hello test from web";
 });
-
-// Route::post('api/postdata', function(){
-//     return "Hello test from web post method";
-// });
