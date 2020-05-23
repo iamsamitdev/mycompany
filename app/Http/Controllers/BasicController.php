@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
+// Load Model
+use App\Model\Employee;
+
 class BasicController extends Controller
 {
     // ฟังก์ชัน home
@@ -109,6 +112,24 @@ class BasicController extends Controller
         // }
 
         return view('pages.employee')->with('employees', $employees);
+
+    }
+
+    public function employeelist(){
+        // อ่านข้อมูลทั้งหมดจากตาราง employees
+       // $employees = Employee::all(); // select * from employees
+
+       // กำหนด condition
+       // $employees = Employee::where('age', 30)->first();
+
+       // OrderBy
+       // $employees = Employee::where('status', 1)->orderBy('id','desc')->get();
+
+    //    echo "<pre>";
+    //    print_r($employees);
+    //    echo "</pre>";
+        $employees = Employee::paginate(3); 
+        return view('pages.employeelist')->with('employees', $employees);
 
     }
 
