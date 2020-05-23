@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
+// Load Model
+use App\Model\Employee;
+
 class BasicController extends Controller
 {
     // ฟังก์ชัน home
@@ -110,6 +113,13 @@ class BasicController extends Controller
 
         return view('pages.employee')->with('employees', $employees);
 
+    }
+
+    public function employeelist(){
+        $employees = Employee::all();
+        echo "<pre>";
+        print_r($employees);
+        echo "</pre>";
     }
 
 }

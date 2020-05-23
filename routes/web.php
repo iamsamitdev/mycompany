@@ -28,5 +28,8 @@ Route::get('contact', 'BasicController@contact');
 /** Login */
 Route::get('login', 'BasicController@login');
 
-/** Read Employee */
+/** Read Employee  with Query Builder*/
 Route::get('employees', 'BasicController@employees');
+
+/** Read Employee with Eloquent */
+Route::get('employeelist', 'BasicController@employeelist');
