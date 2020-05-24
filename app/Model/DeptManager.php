@@ -12,4 +12,10 @@ class DeptManager extends Model
     public function emp_relate(){
         return $this->hasOne('App\Model\Employee','emp_no');
     }
+
+    public function dept_relate()
+    {
+        return $this->belongsTo('App\Model\Department','dept_no');
+    }
+
 }

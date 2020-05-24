@@ -28,7 +28,7 @@
                 <tr>
                     <td>{{ $key+1 }}</td>
                     <td>{{ $dm->emp_no }}</td>
-                    <td>{{ $dm->dept_no }}</td>
+                    <td>{{ $dm->dept_relate->dept_name }}</td>
                     <td>{{ $dm->emp_relate->first_name }}</td>
                     <td>{{ $dm->emp_relate->last_name }}</td>
                     <td>{{ $dm->emp_relate->gender }}</td>
